@@ -243,37 +243,7 @@
 //   }
 // }
 
-// /*
-// EXPLANATION OF KEY CONCEPTS:
 
-// 1. POSE MATRIX:
-//    - A 4x4 transformation matrix that describes the position and orientation of objects in 3D space
-//    - Contains translation (position) and rotation information
-//    - In ARKit, it represents where the camera is in the real world and how it's oriented
-//    - The worldTransform property gives us this matrix for hit test results
-
-// 2. HIT TESTING:
-//    - A technique to determine what 3D object or surface the user is pointing at
-//    - When user taps the screen, we cast a ray from the camera through the tap point
-//    - Hit testing finds where this ray intersects with real-world surfaces
-//    - ARKit automatically detects planes and surfaces for hit testing
-
-// 3. DISTANCE CALCULATION:
-//    - We use the 3D coordinates from hit testing
-//    - Calculate Euclidean distance using the formula: √[(x₂-x₁)² + (y₂-y₁)² + (z₂-z₁)²]
-//    - Camera is typically at origin (0,0,0) in ARKit coordinate system
-//    - Distance is measured in meters
-
-// HOW THE CODE WORKS:
-// 1. User taps "Open AR Camera" button
-// 2. App requests camera permission
-// 3. ARKit starts and shows camera feed
-// 4. User taps on screen
-// 5. Hit testing finds the 3D position of the tap
-// 6. We calculate distance from camera to that point
-// 7. A red sphere marker is placed at the tapped location
-// 8. Distance is displayed on screen
-// */
 
 
 
